@@ -1,9 +1,10 @@
 @fontePrincipal: Roboto, sans-serif;
-@fonteDoTitulo: Lobster, cursive;
+@fonteDoTitulo: Permanent Marker, serif;
 @corDoTexto: #fff;
-@corDeFundo: #eb3b5a;
+@corDeFundo: #74b9ff;
 @corDoTextoBotao: #000;
-@CorDofundoBotao: #f7b731;
+@CorDofundoBotao: #55efc4;
+@corPainelSorteador: #0984e3;
 
 body{
     background-color: @corDeFundo;
@@ -16,12 +17,30 @@ h1{
     font-size: 3em;
 }
 
+h2{
+    font-family: @fontePrincipal;
+    font-weight: lighter;
+}
+
+h3{
+    font-family: @fontePrincipal;
+    font-size: medium;
+}
+
 main{
     max-width: 960px;
     width: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
     font-size: 2em;
     text-align: center;
+    background-color: @corPainelSorteador;
+    height: 850px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: solid 1px;
+}
+
+.numero-sorteador{
+    display: none;
 }
 
 button{
@@ -34,7 +53,12 @@ button{
     background-color: @CorDofundoBotao;
     color: @corDoTextoBotao;
     font-family: @fontePrincipal;
+
+    &:hover{
+        background-color: #00b894;
+    }
 }
+
 
 input{
     display: block;
@@ -50,13 +74,12 @@ input{
 
 .resultado{
     padding: 16px;
-    margin-top: 120px;
-    border: 8px dotted #fff;
+    margin-top: 70px;
     display: none;
 
     span{
         font-weight: bold;
-        font-size: 3em;
+        font-size: 5em;
         display: block;
     }
 }

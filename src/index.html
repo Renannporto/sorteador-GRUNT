@@ -6,18 +6,20 @@
     <title>Sorteador</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
 </head>
 <body>
     <main>
         <h1>Sorteador</h1>
         <form id="form-sorteador">
-            <div>
+            <h2>Sua sorte chegou!</h2>
+            <div class="numero-sorteador">
                 <label for="numero-maximo">Número maximo</label>
-                <input type="number" id="numero-maximo" required min="2" value="2" step="1">
+                <input type="number" id="numero-maximo" required min="2" value="100" step="1">
             </div>
             <button type="submit">Sortear número</button>
+            <h3>O número sorteado sera de 1 a 100</h3>
         </form>
         <div class="resultado">
             O número sorteado foi: <span id="resultado-valor"></span>
